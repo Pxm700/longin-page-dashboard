@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <aside class="sidebar">
+        <h2>Frutaria</h2>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#pedidos">Pedidos</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#relatórios">Relatórios</a></li>
+        </ul>
+    </aside>
+
+    <div class="main">
+
+        <header class="header">
+            <button class="bt-mn" onclick="toggleSidebar()">=</button>
+            <h1>painel de Vendas</h1>
+            <div class="usuario">
+                <span id="nomeUsuario"></span>
+                <button onclick="logout()">Sair</button>
+            </div>
+        </header>
+        
+        <section id="dashboard" class="cards">
+            <div class="card vendas-card">
+                <h3>Vendas Hoje</h3>
+                <p>R$ 653</p>
+            </div>
+            <div class="card pedidos-card">
+                <h3>Pedidos</h3>
+                <p>17</p>
+            </div>
+            <div class="card clientes-card">
+                <h3>Clientes</h3>
+                <p>9</p>
+            </div>
+            <div class="card produtos-card">
+                <h3>Produtos</h3>
+                <p>22</p>
+            </div>
+        </section>
+
+        <section  id="lista-produtos" class="lista-produtos">
+            <div class="produto">
+                <h3>Banana</h3>
+                <p>R$ 5,00 /kg</p>
+                <button>Adicionar</button>
+            </div>
+            <div class="produto">
+                <h3>Maçã</h3>
+                <p>R$ 7,00 /kg</p>
+                <button>Adicionar</button>
+            </div>
+            <div class="produto">
+                <h3>Laranja</h3>
+                <p>R$ 5,50 /kg</p>
+                <button>Adicionar</button>
+            </div>
+            <div class="produto">
+                <h3>Abacaxi</h3>
+                <p>R$ 6,00 /kg</p>
+                <button>Adicionar</button>
+            </div>
+        </section>
+
+        <section  id="pedidos" class="pedidos">
+           <h2>Pedidos Recentes</h2>
+           <table>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <th>João</th>
+                    <th>Banana</th>
+                    <th>2kg</th>
+                    <th>Entregue</th>
+                </tr>
+                <tr>
+                    <th>Pietra</th>
+                    <th>Maçã</th>
+                    <th>3kg</th>
+                    <th>Pedente</th>
+                </tr>
+                <tr>
+                    <th>Francisco</th>
+                    <th>Laranja</th>
+                    <th>3kg</th>
+                    <th>Enviado</th>
+                </tr>
+                <tr>
+                    <th>Jussara</th>
+                    <th>Abacaxi e Maçã</th>
+                    <th>5kg</th>
+                    <th>Pedente</th>
+                </tr>
+           </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
